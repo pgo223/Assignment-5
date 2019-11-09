@@ -1,0 +1,6 @@
+if (!require("data.table")) install.packages("data.table")
+library("data.table")
+if (!require("readr")) install.packages("readr")
+library("readr")
+data.table::fread("DEXUSAL.csv")
+DF <- fread("DEXUSAL.csv", header="auto", data.table=FALSE)
